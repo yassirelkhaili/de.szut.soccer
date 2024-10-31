@@ -52,4 +52,8 @@ public class Player {
                "\nMotivation: " + this.motivation +
                "\nNumber of Goals: " + this.numberOfGoals;
     }
+
+    public int getNumberOfGoals() {
+        return this.numberOfGoals;
+    }
 }
