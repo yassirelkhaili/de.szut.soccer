@@ -3,12 +3,12 @@ package packages.soccerpackage;
 import java.util.Random;
 
 public class Player {
-    private String name;
-    private int age;
-    private int strength;
-    private int powerAtGoalKick;
-    private int motivation;
-    private int numberOfGoals;
+    protected String name;
+    protected int age;
+    protected int strength;
+    protected int powerAtGoalKick;
+    protected int motivation;
+    protected int numberOfGoals;
 
     public Player (String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int shootAtGoal) {
         this.name = name;
@@ -19,7 +19,7 @@ public class Player {
         this.numberOfGoals = numberOfGoals;
     }
 
-    private int validate(int value) {
+    protected int validate(int value) {
         if (value > 10) {
             return 10;
         } else if (value < 1) {
