@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="packages.soccerpackage.CoachTest" time="0.035" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="packages.soccerpackage.CoachTest" time="0.036" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\BlueS\AppData\Local\Temp\surefire2128283121652259608\surefirebooter-20241031162243459_3.jar C:\Users\BlueS\AppData\Local\Temp\surefire2128283121652259608 2024-10-31T16-22-43_350-jvmRun1 surefire-20241031162243459_1tmp surefire_0-20241031162243459_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\BlueS\AppData\Local\Temp\surefire6335783624932142563\surefirebooter-20241031174238131_3.jar C:\Users\BlueS\AppData\Local\Temp\surefire6335783624932142563 2024-10-31T17-42-38_022-jvmRun1 surefire-20241031174238131_1tmp surefire_0-20241031174238131_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\BlueS\Desktop\berufschule\deszutsoccer\target\test-classes;C:\Users\BlueS\Desktop\berufschule\deszutsoccer\target\classes;C:\Users\BlueS\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.1\junit-jupiter-5.8.1.jar;C:\Users\BlueS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\BlueS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\BlueS\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\BlueS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.1\junit-jupiter-params-5.8.1.jar;C:\Users\BlueS\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\BlueS\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\BlueS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BlueS\AppData\Local\Temp\surefire2128283121652259608\surefirebooter-20241031162243459_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BlueS\AppData\Local\Temp\surefire6335783624932142563\surefirebooter-20241031174238131_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.13+11"/>
@@ -61,8 +61,8 @@
   </properties>
   <testcase name="testEdgeCaseExperienceOne" classname="packages.soccerpackage.CoachTest" time="0.013"/>
   <testcase name="testEdgeCaseExperienceTen" classname="packages.soccerpackage.CoachTest" time="0.0"/>
-  <testcase name="testCoachExperienceValidationBelowLimit" classname="packages.soccerpackage.CoachTest" time="0.002"/>
+  <testcase name="testCoachExperienceValidationBelowLimit" classname="packages.soccerpackage.CoachTest" time="0.0"/>
   <testcase name="testCoachCreationWithValidExperience" classname="packages.soccerpackage.CoachTest" time="0.001"/>
-  <testcase name="testToString" classname="packages.soccerpackage.CoachTest" time="0.005"/>
+  <testcase name="testToString" classname="packages.soccerpackage.CoachTest" time="0.006"/>
   <testcase name="testCoachExperienceValidationAboveLimit" classname="packages.soccerpackage.CoachTest" time="0.0"/>
 </testsuite>

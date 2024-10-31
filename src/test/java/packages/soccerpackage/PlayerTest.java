@@ -7,14 +7,16 @@ public class PlayerTest {
 
     @Test
     public void givenShootGoal_whenAddGoal_ReturnUpdatedNumberOfGoals() {
-        // Arrange
         Player player = new Player("Valid Coach", 40, 5, 6, 7, 0, 8);
-        
-        // Act
         int initialGoals = player.getNumberOfGoals();
         player.addGoal();
-        
-        // Assert
         assertEquals(initialGoals + 1, player.getNumberOfGoals(), "Number of goals should be incremented by 1");
+    }
+
+    @Test
+    public void whenShootAtGoal_thenShotStrengthWithinRange() {
+        Player player = new Player("Valid Coach", 40, 5, 6, 7, 0, 8);
+        int shotStrength = player.shootAtGoal();
+        assertTrue(shotStrength >= 1 && shotStrength <= 10, "Shot strength should be between 1 and 10");
     }
 }
