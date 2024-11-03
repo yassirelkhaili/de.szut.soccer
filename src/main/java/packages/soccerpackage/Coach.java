@@ -1,13 +1,12 @@
 package packages.soccerpackage;
 
-public class Coach {
-    private String name;
-    private int age;
+import packages.soccerpackage3.Person;
+
+public class Coach extends Person{
     private int experience;
 
     public Coach(String name, int age, int experience) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.experience = this.validate(experience);
     }
 

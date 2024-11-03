@@ -1,6 +1,7 @@
 package soccer;
 
 import packages.soccerpackage2.Goalkeeper;
+import packages.soccerpackage3.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +17,9 @@ public class Main {
         } else {
             System.out.println("Der Torhüter hat den Ball nicht gehalten.");
         }
+
+        // Person person = new Person("name", 22); abstract class cannot be instantiated duh 😒
+
+        
     }
 }

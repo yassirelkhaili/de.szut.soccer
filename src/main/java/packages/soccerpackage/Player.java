@@ -1,18 +1,16 @@
 package packages.soccerpackage;
 
 import java.util.Random;
+import packages.soccerpackage3.Person;
 
-public class Player {
-    protected String name;
-    protected int age;
+public class Player extends Person{
     protected int strength;
     protected int powerAtGoalKick;
     protected int motivation;
     protected int numberOfGoals;
 
     public Player (String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int shootAtGoal) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.strength = strength;
         this.powerAtGoalKick = powerAtGoalKick;
         this.motivation = motivation;
