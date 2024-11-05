@@ -3,12 +3,12 @@ package packages.soccerpackage2;
 import packages.soccerpackage.Player;
 import java.util.Random;
 
-
 public class Goalkeeper extends Player {
-    public int  reaction;
+    public int reaction;
 
-    public Goalkeeper(String name, int age, int strength, int powerAtGoalKick, int force, int motivation, int numberOfGoals, int shootAtGoal, int reaction) {
-        super(name, age, force, powerAtGoalKick, motivation, 0, 0); 
+    public Goalkeeper(String name, int age, int strength, int powerAtGoalKick, int force, int motivation,
+            int numberOfGoals, int shootAtGoal, int reaction) {
+        super(name, age, force, powerAtGoalKick, motivation, 0, 0, 8);
         this.reaction = super.validate(reaction);
     }
 
@@ -30,6 +30,6 @@ public class Goalkeeper extends Player {
     @Override
     public String toString() {
         return super.toString() +
-               "\nReaction: " + this.reaction;
+                "\nReaction: " + this.reaction;
     }
 }

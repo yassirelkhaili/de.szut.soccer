@@ -2,7 +2,7 @@ package packages.soccerpackage;
 
 import packages.soccerpackage3.Person;
 
-public class Coach extends Person{
+public class Coach extends Person {
     private int experience;
 
     public Coach(String name, int age, int experience) {

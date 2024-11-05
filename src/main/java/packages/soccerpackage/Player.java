@@ -3,18 +3,21 @@ package packages.soccerpackage;
 import java.util.Random;
 import packages.soccerpackage3.Person;
 
-public class Player extends Person{
+public class Player extends Person {
     protected int strength;
     protected int powerAtGoalKick;
     protected int motivation;
     protected int numberOfGoals;
+    protected int totalForce;
 
-    public Player (String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals, int shootAtGoal) {
+    public Player(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals,
+            int shootAtGoal, int totalForce) {
         super(name, age);
         this.strength = strength;
         this.powerAtGoalKick = powerAtGoalKick;
         this.motivation = motivation;
         this.numberOfGoals = numberOfGoals;
+        this.totalForce = totalForce;
     }
 
     protected int validate(int value) {
@@ -43,15 +46,23 @@ public class Player extends Person{
     @Override
     public String toString() {
         return "\nPlayer\n" +
-               "Name: " + this.name +
-               "\nAge: " + this.age +
-               "\nStrength: " + this.strength +
-               "\nPower at Goal Kick: " + this.powerAtGoalKick +
-               "\nMotivation: " + this.motivation +
-               "\nNumber of Goals: " + this.numberOfGoals;
+                "Name: " + this.name +
+                "\nAge: " + this.age +
+                "\nStrength: " + this.strength +
+                "\nPower at Goal Kick: " + this.powerAtGoalKick +
+                "\nMotivation: " + this.motivation +
+                "\nNumber of Goals: " + this.numberOfGoals;
     }
 
     public int getNumberOfGoals() {
         return this.numberOfGoals;
+    }
+
+    public int getMotivation() {
+        return this.motivation;
+    }
+
+    public int getForce() {
+        return this.totalForce;
     }
 }
