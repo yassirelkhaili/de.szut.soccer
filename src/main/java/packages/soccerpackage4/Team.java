@@ -10,12 +10,14 @@ public class Team {
     private String name;
     private Goalkeeper goalkeeper;
     private ArrayList<Player> squad;
+    public int teamGoals;
 
-    public Team(Coach coach, String name, Goalkeeper goalkeeper) {
+    public Team(Coach coach, String name, Goalkeeper goalkeeper, int teamGoals) {
         this.coach = coach;
         this.name = name;
         this.goalkeeper = goalkeeper;
         this.squad = new ArrayList<Player>();
+        this.teamGoals = teamGoals;
     }
 
     public void addPlayer(Player player) {
@@ -55,5 +57,13 @@ public class Team {
         }
     
         return result;
+    }
+
+    public Coach getCoach () {
+        return this.coach;
+    }
+
+    public String getName () {
+        return this.name;
     }
 }

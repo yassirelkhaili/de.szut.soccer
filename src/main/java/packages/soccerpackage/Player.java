@@ -5,9 +5,10 @@ import packages.soccerpackage3.Person;
 
 public class Player extends Person {
     protected int strength;
-    protected int powerAtGoalKick;
+    public int powerAtGoalKick;
     protected int motivation;
     protected int numberOfGoals;
+    protected int shotStrength;
     protected int totalForce;
 
     public Player(String name, int age, int strength, int powerAtGoalKick, int motivation, int numberOfGoals,
@@ -29,10 +30,13 @@ public class Player extends Person {
         return value;
     }
 
-    public int shootAtGoal() {
+    public boolean shootAtGoal() {
         Random random = new Random();
         int shotStrength = powerAtGoalKick + random.nextInt(4) - 2;
-        return validate(shotStrength);
+        int validatedShotStrength = validate(shotStrength);
+        this.shotStrength = validatedShotStrength;
+        int targetThreshold = 5;
+        return validatedShotStrength >= targetThreshold;
     }
 
     public String getName() {

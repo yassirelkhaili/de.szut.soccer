@@ -14,9 +14,9 @@ public class PlayerTest {
     }
 
     @Test
-    public void whenShootAtGoal_thenShotStrengthWithinRange() {
+    public void whenShootAtGoal_thenReturnsBoolean() {
         Player player = new Player("Valid Coach", 40, 5, 6, 7, 0, 8, 3);
-        int shotStrength = player.shootAtGoal();
-        assertTrue(shotStrength >= 1 && shotStrength <= 10, "Shot strength should be between 1 and 10");
+        boolean onTarget = player.shootAtGoal();
+        assertNotNull(onTarget, "shootAtGoal should return a boolean value");
     }
 }

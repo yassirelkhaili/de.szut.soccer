@@ -34,7 +34,7 @@ public class Main {
         Player player8 = new Player("Bellingham", 3, 4, 12, 8, 4, 2, 9);
         Player player9 = new Player("Reus", 3, 4, 12, 8, 4, 2, 9);
         Player player10 = new Player("Haaland", 3, 4, 12, 8, 4, 2, 9);
-        Team team = new Team(coach, "Mannschaft", keeper);
+        Team team = new Team(coach, "Mannschaft", keeper, 0);
         team.addPlayer(player1);
         team.addPlayer(player2);
         team.addPlayer(player3);

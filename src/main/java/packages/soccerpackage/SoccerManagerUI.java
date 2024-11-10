@@ -9,7 +9,8 @@ public class SoccerManagerUI {
         Player player = new Player("Derick Henry", 36, 8, 7, 10, 0, 5, 4);
         System.out.println(player.toString());
 
-        int shotPower = player.shootAtGoal();
+        player.shootAtGoal();
+        int shotPower = player.shotStrength;
         System.out.println("Torschusshärte von " + player.getName() + ": " + shotPower);
     }
 }
